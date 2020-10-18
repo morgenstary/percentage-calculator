@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Percentage Calculators</h1>
+    </header>
+
+    <section>
+        <p>Calculate percentages based on various inputs automatically as you type</p>
+        
+        <!-- Calc Row 1 -->
+        <div class="calc-row"> 
+            <!-- formula 1 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: A / B * 100</p1>
+                </div>
+                <label for="input-1a" class="input"></label>
+                <input type="number" id="input-1a" oninput="formula1()" class="input" name="input-1a">
+                <label for="input-1b" class="input">is what % of</label>
+                <input type="number" id="input-1b" oninput="formula1()" class="input" name="input-1b">
+                <div class="answer" id="answer-1">
+                    Answer:
+                </div>
+            </div>
+
+            <!-- formula 2 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: A * B / 100</p1>
+                </div>
+                <label for="input-2a" class="input">What is</label>
+                <input type="number" id="input-2a" oninput="formula2()" class="input" name="input-2a">
+                <label for="input-2b" class="input">% of</label>
+                <input type="number" id="input-2b" oninput="formula2()" class="input" name="input-2b">
+                <div class="answer" id="answer-2">
+                    Answer:
+                </div>
+            </div>
+
+            <!-- formula 3 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: A / B * 100</p1>
+                </div>
+                <input type="number" id="input-3a" oninput="formula3()" class="input" name="input-3a">
+                <label for="input-3a" class="input">is</label>
+                <input type="number" id="input-3b" oninput="formula3()" class="input" name="input-3b">
+                <label for="input-3b" class="input">% of what?</label>
+                <div class="answer" id="answer-3">
+                    Answer:
+                </div>
+            </div>
+        </div>
+
+        <!-- Calc Row 2 -->
+        <div class="calc-row">
+            <!-- formula 4 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: (B - A) / A * 100</p1>
+                </div>
+                <label for="input-4a" class="input">+/- from</label>
+                <input type="number" id="input-4a" oninput="formula4()" class="input" name="input-4a">
+                <label for="input-4b" class="input">to</label>
+                <input type="number" id="input-4b" oninput="formula4()" class="input" name="input-4b">
+                <div class="answer" id="answer-4">
+                    Answer:
+                </div>
+            </div>
+
+            <!-- formula 5 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: A * B / 100</p1>
+                </div>
+                <input type="number" id="input-5a" oninput="formula5()" class="input" name="input-5a">
+                <label for="input-5a" class="input">x</label>
+                <input type="number" id="input-5b" oninput="formula5()" class="input" name="input-5b">
+                <label for="input-5b" class="input">% ?</label>
+                <div class="answer" id="answer-5">
+                    Answer:
+                </div>
+            </div>
+
+            <!-- formula 6 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: A / (B / 100)</p1>
+                </div>
+                <input type="number" id="input-6a" oninput="formula6()" class="input" name="input-6a">
+                <label for="input-6a" class="input">/</label>
+                <input type="number" id="input-6b" oninput="formula6()" class="input" name="input-6b">
+                <label for="input-6b" class="input">% ?</label>
+                <div class="answer" id="answer-6">
+                    Answer:
+                </div>
+            </div>
+        </div>
+
+        <!-- Calc Row 3 -->
+        <div class="calc-row">
+            <!-- formula 7 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: A * (1 + B / 100)</p1>
+                </div>
+                <label for="input-7a" class="input">Increase</label>
+                <input type="number" id="input-7a" oninput="formula7()" class="input" name="input-7a">
+                <label for="input-7b" class="input">by</label>
+                <input type="number" id="input-7b" oninput="formula7()" class="input" name="input-7b">
+                <label for="input-7c" class="input">%</label>
+                <div class="answer" id="answer-7">
+                    Answer:
+                </div>
+            </div>
+
+            <!-- formula 8 -->
+            <div class="inputs">
+                <div class="content">
+                    <p1>Formula: A * ( 1 - B / 100)</p1>
+                </div>
+                <label for="input-8a" class="input">Decrease</label>
+                <input type="number" id="input-8a" oninput="formula8()" class="input" name="input-8a">
+                <label for="input-8b" class="input">by</label>
+                <input type="number" id="input-8b" oninput="formula8()" class="input" name="input-8b">
+                <label for="input-8c" class="input">%</label>
+                <div class="answer" id="answer-8">
+                    Answer:
+                </div>
+            </div>
+
+            <!-- formula 9 -->
+            <div class="inputs">
+                <div class="content">
+                </div>
+                <label for="input-9a" class="input">Convert fraction, mixed number or decimal to percent</label>
+                <input type="text" id="input-9a" oninput="formula9(this)" class="input" name="input-9a">
+                <div class="answer" id="answer-9">
+                    Answer:
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <footer>
+        <div class="tips-title">
+            <p2>Tips:</p2>
+        </div>
+        <div class="tips">
+            <p2>
+                <ul>
+                    <li>Click textfield to enter a number. Use forward and back arrows on keyboard to move within
+                        textfield to add or delete numbers. Click again within each textfield to clear.</li>
+                </ul>
+                <ul>
+                    <li>In the fraction, mixed number, and decimal calculator, you can input integer (5), decimal (25.7),
+                        fraction (3/4), or
+                        a mixed number (75 2/3).
+                    </li>
+                </ul>
+                <ul>
+                    <li>Refresh webpage to clear all calculations.
+                    </li>
+                </ul>
+            </p2>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

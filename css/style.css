@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0ca7d3;
+}
+
+header {
+    overflow: hidden;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+header p {
+    font-weight: 800;
+    color: #015a76;
+}
+
+p {
+    font-size: 18px;
+}
+
+p1 {
+    font-size: 16px;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+}
+
+p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+section {
+    background-color: #73c7dd;
+    padding: 10px;
+}
+
+section p {
+    font-size: 18px;
+    font-weight: 800;
+    color: #015a76;
+    text-align: center;
+}
+
+.calc-row {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.inputs {
+    background-color: #d4e8ee;
+    border-radius: 0.5em;
+    padding: 10px;
+    margin: 10px;
+    width: 360px;
+}
+
+footer {
+    background-color: #d4e8ee;
+    padding: 10px;
+}
+
+.tips-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.tips {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* remove spinner arrows from input fields */
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+}
+
+.answer {
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.calculation {
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 10px;
+    text-align: center;
+    color: #015a76;
+}
+
+.content {
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media (max-width: 1200px) {
+    .calc-row {
+        flex-direction: column;
+    }
+}
+
+/* smaller screens */
+
+@media screen and (max-width: 638px) {
+    .input {
+        width: 86px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .input {
+        width: 58px;
+    }
+}
+
+
