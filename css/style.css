@@ -27,7 +27,6 @@ header p {
 
 p {
     font-size: 18px;
-
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -166,15 +165,34 @@ input[type=number] {
 }
 
 @media only screen and (orientation: landscape) {
-    .calc-row {
-        flex-direction: unset;
-    }
-  }
-
-/* @media screen and (max-width: 568px) {
     .input {
-        width: 58px;
+        width: 160px;
+        padding: 4px;
+        font-size: 20px;
     }
-} */
-
-
+    .inputs {
+        width: 720px;
+    }
+    p1 {
+        font-size: 18px;
+    }
+    .answer {
+        font-size: 20px;
+    }
+    .tips-title {
+        background-color: #d4e8ee;
+        font-size: 20px;
+        margin: 0 28px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px 0px 0px 0px;
+    }
+    .tips {
+        background-color: #d4e8ee;
+        font-size: 18px;
+        margin: 0 28px;
+        border-radius: 0px 0px 10px 10px;
+    }
+    footer {
+        background-color: #73c7dd;
+    }
+}
