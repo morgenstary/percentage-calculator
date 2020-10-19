@@ -151,7 +151,7 @@ input[type=number] {
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .calc-row {
         flex-direction: column;
     }
@@ -164,6 +164,12 @@ input[type=number] {
         width: 86px;
     }
 }
+
+@media only screen and (orientation: landscape) {
+    .calc-row {
+        flex-direction: unset;
+    }
+  }
 
 /* @media screen and (max-width: 568px) {
     .input {
