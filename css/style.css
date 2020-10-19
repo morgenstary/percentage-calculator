@@ -166,7 +166,7 @@ input[type=number] {
 
 @media only screen and (orientation: landscape) {
     section {
-        border-radius: 10px;
+        border-radius: 10px 10px 0px 0px;
     }
     .input {
         width: 160px;
@@ -185,18 +185,19 @@ input[type=number] {
     .tips-title {
         background-color: #d4e8ee;
         font-size: 20px;
-        margin: 0 26px;
+        /* margin: 0 26px; */
         border-radius: 10px 10px 0px 0px;
         padding: 20px 0px 0px 0px;
     }
     .tips {
         background-color: #d4e8ee;
         font-size: 18px;
-        margin: 0 26px;
+        /* margin: 0 26px; */
         border-radius: 0px 0px 10px 10px;
     }
     footer {
         background-color: #73c7dd;
-        padding: 0px 10px 50px 10px;
+        padding: 0px 30px 50px 30px;
+        border-radius: 0px 0px 10px 10px;
     }
 }
