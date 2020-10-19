@@ -253,12 +253,3 @@ document.getElementById('input-7b').onclick = clearInput7b;
 document.getElementById('input-8a').onclick = clearInput8a;
 document.getElementById('input-8b').onclick = clearInput8b;
 document.getElementById('input-9a').onclick = clearInput9a;
-
-
-
-
-
-
-
-
-
