@@ -164,7 +164,11 @@ input[type=number] {
     }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
     section {
         border-radius: 10px 10px 0px 0px;
     }
@@ -185,14 +189,12 @@ input[type=number] {
     .tips-title {
         background-color: #d4e8ee;
         font-size: 20px;
-        /* margin: 0 26px; */
         border-radius: 10px 10px 0px 0px;
         padding: 20px 0px 0px 0px;
     }
     .tips {
         background-color: #d4e8ee;
         font-size: 18px;
-        /* margin: 0 26px; */
         border-radius: 0px 0px 10px 10px;
     }
     footer {
