@@ -8,7 +8,6 @@ formula1 = function () {
   } else if (num1a === '' || num1b === '') {
     document.getElementById('answer-1').textContent = 'Answer: ';
   };
-  console.log(isNaN(num1a));
 }
 
 formula2 = function () {
